@@ -2,12 +2,12 @@
 
 namespace Hr_library.Core.Entities;
 
-internal class genre: library<int>
+internal class Genre: Library<int>
 {
     public int Id { get; }
     public string Name { get; set; } = null!;
     private static int _id;
-    public genre(string name)
+    public Genre(string name)
     {
         Id = _id++;
         Name = name;

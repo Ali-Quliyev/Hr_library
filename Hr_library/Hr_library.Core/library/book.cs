@@ -2,14 +2,17 @@
 
 namespace Hr_library.Core.Entities;
 
-public class book : library<Guid>
+public class Book : Library<Guid>
 {
     public Guid Id { get; }
     public string Name { get; set; } = null!;
     public DateTime PublicationDate { get; set; }
-    public int Quantity
+    public int Quantity { get; set; }
+    public List<Author> Authors { get; set; }
+    public List<Genre> Genres { get; set; }
+    public Book()
     {
-        get; set;
+        Authors = new List<Author>();
+        Genres = new List<Genre>();
     }
 }
-    

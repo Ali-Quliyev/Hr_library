@@ -1,6 +1,6 @@
 ﻿namespace Hr_library.Core.interfaces;
 
-public interface library<T>
+public interface Library<T>
 {
     public T Id { get; }
 }
